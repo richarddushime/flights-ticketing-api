@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<h1>Flights Available</h1>
+<ul>
+{% for flight in flights_data %}
+    <li>{{ flight }}</li>
+{% empty %}
+    <li>No flights found.</li>
+{% endfor %}
+</ul>
+{% endblock %}
