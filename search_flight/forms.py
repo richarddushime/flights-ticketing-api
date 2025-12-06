@@ -40,7 +40,7 @@ class FlightSearchForm(forms.Form):
     def populate_airport_choices(self):
         url = 'https://skyscanner50.p.rapidapi.com/api/v1/searchFlights'
         params = {
-            'access_key': 'e7811949dbmsh1bc1dad35f0d819p12c788jsn23611ad30e78',
+            'access_key': 'YOUR_API_KEY_HERE',
             'offset': 0,
             'limit': 100,
         }
